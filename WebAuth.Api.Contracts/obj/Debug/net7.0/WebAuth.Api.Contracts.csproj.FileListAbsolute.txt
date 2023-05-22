@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\WebAuth\WebAuth.Api.Contracts\bin\Debug\net7.0\WebAuth.Api.Contracts.deps.json
+C:\Users\User\Desktop\WebAuth\WebAuth.Api.Contracts\bin\Debug\net7.0\WebAuth.Api.Contracts.dll
+C:\Users\User\Desktop\WebAuth\WebAuth.Api.Contracts\bin\Debug\net7.0\WebAuth.Api.Contracts.pdb
+C:\Users\User\Desktop\WebAuth\WebAuth.Api.Contracts\obj\Debug\net7.0\WebAuth.Api.Contracts.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\WebAuth\WebAuth.Api.Contracts\obj\Debug\net7.0\WebAuth.Api.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\WebAuth\WebAuth.Api.Contracts\obj\Debug\net7.0\WebAuth.Api.Contracts.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\WebAuth\WebAuth.Api.Contracts\obj\Debug\net7.0\WebAuth.Api.Contracts.AssemblyInfo.cs
+C:\Users\User\Desktop\WebAuth\WebAuth.Api.Contracts\obj\Debug\net7.0\WebAuth.Api.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WebAuth\WebAuth.Api.Contracts\obj\Debug\net7.0\WebAuth.Api.Contracts.dll
+C:\Users\User\Desktop\WebAuth\WebAuth.Api.Contracts\obj\Debug\net7.0\refint\WebAuth.Api.Contracts.dll
+C:\Users\User\Desktop\WebAuth\WebAuth.Api.Contracts\obj\Debug\net7.0\WebAuth.Api.Contracts.pdb
+C:\Users\User\Desktop\WebAuth\WebAuth.Api.Contracts\obj\Debug\net7.0\ref\WebAuth.Api.Contracts.dll
