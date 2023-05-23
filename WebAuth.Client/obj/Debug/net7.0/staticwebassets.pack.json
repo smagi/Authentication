@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\WebAuth.Client.styles.css"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\WebAuth\\WebAuth.Client\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\WebAuth\\WebAuth.Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

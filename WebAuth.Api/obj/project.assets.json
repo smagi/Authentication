@@ -258,6 +258,22 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/7.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
         "type": "package",
         "dependencies": {
@@ -1580,6 +1596,20 @@
         "lib/netstandard2.0/_._",
         "microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/7.0.5": {
+      "sha512": "y3S/A/0uJX7KOhppC3xqyta6Z0PRz0qPLngH5GFu4GZ7/+Sw2u/amf7MavvR5GfZjGabGcohMpsRSahMmpF9gA==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/7.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.7.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
@@ -3839,6 +3869,7 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.5",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.5",
       "Microsoft.AspNetCore.OpenApi >= 7.0.2",
+      "Microsoft.EntityFrameworkCore.InMemory >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Swashbuckle.AspNetCore >= 6.4.0",
       "WebAuth.Api.Contracts >= 1.0.0"
@@ -3908,6 +3939,10 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.2, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[7.0.5, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",

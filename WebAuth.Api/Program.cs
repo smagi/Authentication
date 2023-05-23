@@ -19,12 +19,13 @@ public class Programm
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
-        builder.Services.AddDbContext<ApplicationDbContext>(options => 
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+        builder.Services.AddDbContext<ApplicationDbContext>();
 
         builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
+
+        builder.Services.AddOptions<JwtTokenSettings>();
 
         builder.Services.Configure<IdentityOptions>(options =>
         {
@@ -48,13 +49,16 @@ public class Programm
             options.RequireHttpsMetadata = true;
             options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
             {
-                ValidateIssuer = true,
-                ValidateAudience = true,
+                //ValidateIssuer = true,
+                //ValidateAudience = true,
                 ValidateIssuerSigningKey = true,
                 ValidateLifetime = true,
-                ValidIssuer = jwtTokenSettings!.ValidIssuer,
-                ValidAudience = jwtTokenSettings.ValidAudience,
-                IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(jwtTokenSettings.Secret!)),
+               // ValidIssuer = jwtTokenSettings?.ValidIssuer,
+               // ValidAudience = jwtTokenSettings?.ValidAudience,
+                
+                IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("TestTestTestTestTestTestTest")),
+
+                //IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(jwtTokenSettings.Secret!)),
                 ClockSkew = TimeSpan.Zero
             };
         });
@@ -71,11 +75,17 @@ public class Programm
             app.UseSwaggerUI();
         }
 
-        app.UseHttpsRedirection();
+        //app.UseHttpsRedirection();
 
         app.UseAuthorization();
 
         app.MapControllers();
+
+        app.UseCors(x => x
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .SetIsOriginAllowed(origin => true) // allow any origin  
+    .AllowCredentials());               // allow credentials 
 
         app.Run();
     }

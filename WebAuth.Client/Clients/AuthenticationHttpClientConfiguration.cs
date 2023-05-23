@@ -10,12 +10,13 @@ namespace WebAuth.Client.Clients
                     .GetSection(nameof(AuthenticationHttpClientSettings))
                     .Get<AuthenticationHttpClientSettings>();
 
-                if (string.IsNullOrWhiteSpace(authenticationHttpClientSettings.BaseAddress))
+                if (string.IsNullOrWhiteSpace(authenticationHttpClientSettings?.BaseAddress))
                     throw new InvalidOperationException("APIBaseAddress missing from appsettings file.");
 
                 builder.Services.AddHttpClient<AuthenticationHttpClient>(client =>
                 {
-                    client.BaseAddress = new Uri(authenticationHttpClientSettings.BaseAddress);
+                    client.BaseAddress = new Uri("http://localhost:5013/");
+                    //new Uri(authenticationHttpClientSettings.BaseAddress);
                 });
             }
     }

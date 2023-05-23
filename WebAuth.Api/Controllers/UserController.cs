@@ -60,7 +60,7 @@ namespace WebAuth.Api.Controllers
         [Route("login")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        public async Task<IActionResult> Login(UserLoginDto userLoginDto)
+        public async Task<IActionResult> Login([FromBody] UserLoginDto userLoginDto)
         {
             var user = await _userManagaer.FindByEmailAsync(userLoginDto.Email!);
 

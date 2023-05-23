@@ -1,0 +1,20 @@
+@page "/logout"
+@using WebAuth.Client.Clients
+
+@inject AuthenticationHttpClient Http
+@inject NavigationManager NavigationManager
+
+<text>Logging out...</text>
+
+@code{
+        protected override async Task OnInitializedAsync()
+        {
+            await Http.LogoutUser();
+            NavigationManager.NavigateTo("login");
+        }
+}
+
+
+
+
+

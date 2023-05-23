@@ -23,7 +23,7 @@ public class TokenService : ITokenService
     }
 
     public async Task SetToken(TokenDto tokenDto)
-    {
+    {   
         await _localStorageService.SetItemAsync(Key, tokenDto);
     }
 }

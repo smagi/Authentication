@@ -608,12 +608,9 @@ C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\WebAuth.Client.Ass
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\WebAuth.Client.AssemblyInfo.cs
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\WebAuth.Client.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\WebAuth.Client.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\HX4hWcnl.gz
-C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\xiQkYnJ1.gz
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\UbO5FWaC.gz
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\LNzBq1Qi.gz
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\8ZxJaZc4.gz
-C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\6pKGbpf3.gz
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\3zj0y4jA.gz
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\CY5Lrd8d.gz
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\WuvCvkJB.gz
@@ -626,7 +623,6 @@ C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\C86q9SZa.
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\I6X451pT.gz
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\uOA7FZow.gz
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\TiFgc72S.gz
-C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\vAPK89+8.gz
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\VVbveZJS.gz
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\hheP+3V9.gz
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\LLjgP+aR.gz
@@ -839,3 +835,15 @@ C:\Users\User\Desktop\WebAuth\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\bin\Debug\net7.0\appsettings.json
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\bin\Debug\net7.0\Microsoft.Extensions.Http.dll
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\QZn5kvW2.gz
+C:\Users\User\Desktop\WebAuth\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.LocalStorage.dll
+C:\Users\User\Desktop\WebAuth\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\User\Desktop\WebAuth\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.LocalStorage.dll.gz
+C:\Users\User\Desktop\WebAuth\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll.gz
+C:\Users\User\Desktop\WebAuth\WebAuth.Client\bin\Debug\net7.0\Blazored.LocalStorage.dll
+C:\Users\User\Desktop\WebAuth\WebAuth.Client\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\cvNVpegt.gz
+C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\aV8x8Zn3.gz
+C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\pdu3SSBF.gz
+C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\ddTsYNlW.gz
+C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\3U9k3O3M.gz
+C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\build-gz\vnLyLFt+.gz
