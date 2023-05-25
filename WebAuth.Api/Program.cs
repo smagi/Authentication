@@ -1,7 +1,6 @@
 
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using WebAuth.Api.Entities;
 using WebAuth.Api.Infrasturcture;
@@ -15,7 +14,6 @@ public class Programm
         // Add services to the container.
 
         builder.Services.AddControllers();
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
@@ -32,11 +30,6 @@ public class Programm
             options.User.RequireUniqueEmail = true;
         });
 
-
-        var jwtTokenSettings = builder.Configuration
-            .GetSection(nameof(JwtTokenSettings))
-            .Get<JwtTokenSettings>();
-
         builder.Services.AddAuthentication(options =>
         {
             options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -45,20 +38,21 @@ public class Programm
         })
         .AddJwtBearer(options =>
         {
+            var jwtTokenSettings = builder.Configuration
+                .GetSection(nameof(JwtTokenSettings))
+                .Get<JwtTokenSettings>() ?? throw new ArgumentNullException(nameof(JwtTokenSettings));
+
             options.SaveToken = true;
             options.RequireHttpsMetadata = true;
             options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
             {
-                //ValidateIssuer = true,
-                //ValidateAudience = true,
+                ValidateIssuer = true,
+                ValidateAudience = true,
                 ValidateIssuerSigningKey = true,
                 ValidateLifetime = true,
-               // ValidIssuer = jwtTokenSettings?.ValidIssuer,
-               // ValidAudience = jwtTokenSettings?.ValidAudience,
-                
-                IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("TestTestTestTestTestTestTest")),
-
-                //IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(jwtTokenSettings.Secret!)),
+                ValidIssuer = jwtTokenSettings.ValidIssuer,
+                ValidAudience = jwtTokenSettings.ValidAudience,
+                IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(jwtTokenSettings.Secret!)),
                 ClockSkew = TimeSpan.Zero
             };
         });
@@ -77,15 +71,16 @@ public class Programm
 
         //app.UseHttpsRedirection();
 
+        app.UseAuthentication();
         app.UseAuthorization();
 
         app.MapControllers();
 
         app.UseCors(x => x
-    .AllowAnyMethod()
-    .AllowAnyHeader()
-    .SetIsOriginAllowed(origin => true) // allow any origin  
-    .AllowCredentials());               // allow credentials 
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .SetIsOriginAllowed(origin => true) 
+            .AllowCredentials());               
 
         app.Run();
     }

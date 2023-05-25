@@ -1,8 +1,8 @@
-using WebAuth.Client.Models;
+using WebAuth.Client.Models.Register;
 
 namespace WebAuth.Client.Services;
 
-public interface IRegistrationService
+public interface IUserRegistrationService
 {
-    Task<RegistrationResult> Register(RegistrationService registration);
+    Task<UserRegisterResult> Register(UserRegister userRegister);
 }

@@ -1,25 +1,25 @@
 @page "/login"
-@using Api.Contracts.Dtos.Login
+@using WebAuth.Client.Models.Login
 @using WebAuth.Client.Components
-@using WebAuth.Client.Clients
+@using WebAuth.Client.Services
 
-@inject AuthenticationHttpClient Http
+@inject ILoginService LoginService
 @inject NavigationManager NavigationManager
 
 <PageTitle>Login</PageTitle>
 
 <h1>Login</h1>
 
-<EditForm Model="@_userLoginDto" OnValidSubmit="@HandleValidSubmit">
+<EditForm Model="@_userLogin" OnValidSubmit="@HandleValidSubmit">
     <CustomValidation @ref="_customValidation" />
     <DataAnnotationsValidator/>
     <ValidationSummary/>
 
     <div class="mb-3">
-        <InputText class="form-control" id="Email" @bind-Value="_userLoginDto.Email" placeholder="Email"/>
+        <InputText class="form-control" id="Email" @bind-Value="_userLogin.Email" placeholder="Email"/>
     </div>
     <div class="mb-3">
-        <InputText class="form-control" id="Password" @bind-Value="_userLoginDto.Password" placeholder="Password"/>
+        <InputText class="form-control" id="Password" @bind-Value="_userLogin.Password" placeholder="Password"/>
     </div>
 
     @if(_loggingIn)
@@ -34,7 +34,7 @@
 </EditForm>
 
 @code{
-    private UserLoginDto _userLoginDto = new();
+    private UserLogin _userLogin = new();
     private CustomValidation? _customValidation;
     private bool _loggingIn;
 
@@ -42,11 +42,11 @@
     {
         _loggingIn = false;
 
-        var result = await Http.LoginUser(_userLoginDto);
+        var result = await LoginService.Login(_userLogin);
 
         if(result!.Succeeded)
         {
-            NavigationManager.NavigateTo("");
+            NavigationManager.NavigateTo("Index");
         }
         else
         {

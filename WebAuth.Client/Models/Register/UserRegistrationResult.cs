@@ -1,8 +1,7 @@
-namespace WebAuth.Api.Contracts.Dtos.Register
+namespace WebAuth.Client.Models.Register;
+
+public class UserRegisterResult
 {
-    public class UserRegisterResultDto
-    { 
         public bool Succeesed { get; init; }
         public IEnumerable<string>? Errors { get; init; }
-    }
 }

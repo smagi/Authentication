@@ -15,17 +15,13 @@ namespace WebAuth.Api.Services
         public JwtSecurityToken GetUserClaimsAsync(List<Claim> userClaims)
         {
             var authSigningKey = new SymmetricSecurityKey(
-            //    System.Text.Encoding.UTF8.GetBytes(_jwtTokenSettings.Secret!));
-                System.Text.Encoding.UTF8.GetBytes("TestTestTestTestTestTestTest"));
-
+                System.Text.Encoding.UTF8.GetBytes(_jwtTokenSettings.Secret!));
 
             var token = new JwtSecurityToken(
                 issuer: _jwtTokenSettings.ValidIssuer,
                 audience: _jwtTokenSettings.ValidAudience,
                 claims: userClaims,
-               // expires: DateTime.Now.AddMinutes(_jwtTokenSettings.ExpiryInMinutes),
-                expires: DateTime.Now.AddMinutes(10000),
-
+                expires: DateTime.Now.AddMinutes(_jwtTokenSettings.ExpiryInMinutes),
                 signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
             );
             return token;

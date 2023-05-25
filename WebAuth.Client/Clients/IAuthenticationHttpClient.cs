@@ -1,11 +1,11 @@
-using WebAuth.Api.Contracts.Dtos.Login;
-using WebAuth.Api.Contracts.Dtos.Register;
+using WebAuth.Client.Models.Login;
+using WebAuth.Client.Models.Register;
 
 namespace WebAuth.Client.Clients;
 
 public interface IAuthenticationHttpClient
 {
-    Task<UserRegisterResultDto> RegisterUser(UserRegisterDto userRegisterDto);
-    Task<UserLoginResultDto?> LoginUser(UserLoginDto userLoginDto);
+    Task<UserRegisterResult> RegisterUser(UserRegister userRegister);
+    Task<UserLoginResult> LoginUser(UserLogin userLogin);
 
 }

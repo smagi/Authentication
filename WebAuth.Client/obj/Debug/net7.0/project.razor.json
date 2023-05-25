@@ -46,223 +46,97 @@
         }
       },
       {
-        "HashCode": 984284241,
+        "HashCode": -1790133749,
         "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Pages.Logout",
+        "Name": "WebAuth.Client.App",
         "AssemblyName": "WebAuth.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Logout"
+            "TagName": "App"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Pages.Logout",
-          "Common.TypeNameIdentifier": "Logout",
-          "Common.TypeNamespace": "WebAuth.Client.Pages",
+          "Common.TypeName": "WebAuth.Client.App",
+          "Common.TypeNameIdentifier": "App",
+          "Common.TypeNamespace": "WebAuth.Client",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -1425042561,
+        "HashCode": -190689369,
         "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Pages.Logout",
+        "Name": "WebAuth.Client.App",
         "AssemblyName": "WebAuth.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "WebAuth.Client.Pages.Logout"
+            "TagName": "WebAuth.Client.App"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Pages.Logout",
-          "Common.TypeNameIdentifier": "Logout",
-          "Common.TypeNamespace": "WebAuth.Client.Pages",
+          "Common.TypeName": "WebAuth.Client.App",
+          "Common.TypeNameIdentifier": "App",
+          "Common.TypeNamespace": "WebAuth.Client",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 694310229,
+        "HashCode": 293602112,
         "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Pages.Login",
+        "Name": "WebAuth.Client.Shared.SurveyPrompt",
         "AssemblyName": "WebAuth.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Login"
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
           }
         ],
         "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Pages.Login",
-          "Common.TypeNameIdentifier": "Login",
-          "Common.TypeNamespace": "WebAuth.Client.Pages",
+          "Common.TypeName": "WebAuth.Client.Shared.SurveyPrompt",
+          "Common.TypeNameIdentifier": "SurveyPrompt",
+          "Common.TypeNamespace": "WebAuth.Client.Shared",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 245477598,
+        "HashCode": -141654289,
         "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Pages.Login",
+        "Name": "WebAuth.Client.Shared.SurveyPrompt",
         "AssemblyName": "WebAuth.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "WebAuth.Client.Pages.Login"
+            "TagName": "WebAuth.Client.Shared.SurveyPrompt"
           }
         ],
-        "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Pages.Login",
-          "Common.TypeNameIdentifier": "Login",
-          "Common.TypeNamespace": "WebAuth.Client.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1434440053,
-        "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Pages.Counter",
-        "AssemblyName": "WebAuth.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
+        "BoundAttributes": [
           {
-            "TagName": "Counter"
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
           }
         ],
         "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Pages.Counter",
-          "Common.TypeNameIdentifier": "Counter",
-          "Common.TypeNamespace": "WebAuth.Client.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1469365073,
-        "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Pages.Counter",
-        "AssemblyName": "WebAuth.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "WebAuth.Client.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Pages.Counter",
-          "Common.TypeNameIdentifier": "Counter",
-          "Common.TypeNamespace": "WebAuth.Client.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -291388846,
-        "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Pages.Register",
-        "AssemblyName": "WebAuth.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Register"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Pages.Register",
-          "Common.TypeNameIdentifier": "Register",
-          "Common.TypeNamespace": "WebAuth.Client.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1173495507,
-        "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Pages.Register",
-        "AssemblyName": "WebAuth.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "WebAuth.Client.Pages.Register"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Pages.Register",
-          "Common.TypeNameIdentifier": "Register",
-          "Common.TypeNamespace": "WebAuth.Client.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -999555643,
-        "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Pages.FetchData",
-        "AssemblyName": "WebAuth.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Pages.FetchData",
-          "Common.TypeNameIdentifier": "FetchData",
-          "Common.TypeNamespace": "WebAuth.Client.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 756685991,
-        "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Pages.FetchData",
-        "AssemblyName": "WebAuth.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "WebAuth.Client.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Pages.FetchData",
-          "Common.TypeNameIdentifier": "FetchData",
-          "Common.TypeNamespace": "WebAuth.Client.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1282278803,
-        "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Pages.Index",
-        "AssemblyName": "WebAuth.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Pages.Index",
-          "Common.TypeNameIdentifier": "Index",
-          "Common.TypeNamespace": "WebAuth.Client.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1097926611,
-        "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Pages.Index",
-        "AssemblyName": "WebAuth.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "WebAuth.Client.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Pages.Index",
-          "Common.TypeNameIdentifier": "Index",
-          "Common.TypeNamespace": "WebAuth.Client.Pages",
+          "Common.TypeName": "WebAuth.Client.Shared.SurveyPrompt",
+          "Common.TypeNameIdentifier": "SurveyPrompt",
+          "Common.TypeNamespace": "WebAuth.Client.Shared",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -374,65 +248,6 @@
         }
       },
       {
-        "HashCode": 293602112,
-        "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Shared.SurveyPrompt",
-        "AssemblyName": "WebAuth.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Shared.SurveyPrompt",
-          "Common.TypeNameIdentifier": "SurveyPrompt",
-          "Common.TypeNamespace": "WebAuth.Client.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -141654289,
-        "Kind": "Components.Component",
-        "Name": "WebAuth.Client.Shared.SurveyPrompt",
-        "AssemblyName": "WebAuth.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "WebAuth.Client.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WebAuth.Client.Shared.SurveyPrompt",
-          "Common.TypeNameIdentifier": "SurveyPrompt",
-          "Common.TypeNamespace": "WebAuth.Client.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -849653138,
         "Kind": "Components.Component",
         "Name": "WebAuth.Client.Shared.NavMenu",
@@ -470,38 +285,149 @@
         }
       },
       {
-        "HashCode": -1790133749,
+        "HashCode": 1282278803,
         "Kind": "Components.Component",
-        "Name": "WebAuth.Client.App",
+        "Name": "WebAuth.Client.Pages.Index",
         "AssemblyName": "WebAuth.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "WebAuth.Client.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "WebAuth.Client",
+          "Common.TypeName": "WebAuth.Client.Pages.Index",
+          "Common.TypeNameIdentifier": "Index",
+          "Common.TypeNamespace": "WebAuth.Client.Pages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -190689369,
+        "HashCode": -1097926611,
         "Kind": "Components.Component",
-        "Name": "WebAuth.Client.App",
+        "Name": "WebAuth.Client.Pages.Index",
         "AssemblyName": "WebAuth.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "WebAuth.Client.App"
+            "TagName": "WebAuth.Client.Pages.Index"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "WebAuth.Client.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "WebAuth.Client",
+          "Common.TypeName": "WebAuth.Client.Pages.Index",
+          "Common.TypeNameIdentifier": "Index",
+          "Common.TypeNamespace": "WebAuth.Client.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 694310229,
+        "Kind": "Components.Component",
+        "Name": "WebAuth.Client.Pages.Login",
+        "AssemblyName": "WebAuth.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Login"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "WebAuth.Client.Pages.Login",
+          "Common.TypeNameIdentifier": "Login",
+          "Common.TypeNamespace": "WebAuth.Client.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 245477598,
+        "Kind": "Components.Component",
+        "Name": "WebAuth.Client.Pages.Login",
+        "AssemblyName": "WebAuth.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WebAuth.Client.Pages.Login"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "WebAuth.Client.Pages.Login",
+          "Common.TypeNameIdentifier": "Login",
+          "Common.TypeNamespace": "WebAuth.Client.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 984284241,
+        "Kind": "Components.Component",
+        "Name": "WebAuth.Client.Pages.Logout",
+        "AssemblyName": "WebAuth.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Logout"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "WebAuth.Client.Pages.Logout",
+          "Common.TypeNameIdentifier": "Logout",
+          "Common.TypeNamespace": "WebAuth.Client.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1425042561,
+        "Kind": "Components.Component",
+        "Name": "WebAuth.Client.Pages.Logout",
+        "AssemblyName": "WebAuth.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WebAuth.Client.Pages.Logout"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "WebAuth.Client.Pages.Logout",
+          "Common.TypeNameIdentifier": "Logout",
+          "Common.TypeNamespace": "WebAuth.Client.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -291388846,
+        "Kind": "Components.Component",
+        "Name": "WebAuth.Client.Pages.Register",
+        "AssemblyName": "WebAuth.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Register"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "WebAuth.Client.Pages.Register",
+          "Common.TypeNameIdentifier": "Register",
+          "Common.TypeNamespace": "WebAuth.Client.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1173495507,
+        "Kind": "Components.Component",
+        "Name": "WebAuth.Client.Pages.Register",
+        "AssemblyName": "WebAuth.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WebAuth.Client.Pages.Register"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "WebAuth.Client.Pages.Register",
+          "Common.TypeNameIdentifier": "Register",
+          "Common.TypeNamespace": "WebAuth.Client.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -16919,18 +16845,8 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\User\\Desktop\\WebAuth\\WebAuth.Client\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
-      "FileKind": "component"
-    },
-    {
       "FilePath": "c:\\Users\\User\\Desktop\\WebAuth\\WebAuth.Client\\Pages\\Register.razor",
       "TargetPath": "Pages\\Register.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\User\\Desktop\\WebAuth\\WebAuth.Client\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
       "FileKind": "component"
     },
     {

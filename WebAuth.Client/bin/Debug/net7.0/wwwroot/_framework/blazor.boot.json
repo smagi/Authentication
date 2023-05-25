@@ -203,15 +203,15 @@
       "mscorlib.dll": "sha256-T52Qf1cS\/UysEoWOoE2ptEJEXfGpanQX5KNLyDiLv1E=",
       "netstandard.dll": "sha256-p32h5P3QmHJ\/FGoeE6m7f5g\/8ng2PSPGZktHyMadvIs=",
       "System.Private.CoreLib.dll": "sha256-6MwQcyKbqBsoZYOcD9fQJ4iKcn1qMmWRWVEkU2LLCb0=",
-      "WebAuth.Api.Contracts.dll": "sha256-VwP4NckrQiUqX+Dv0SkShTvkC+JDQNVykzvi54S2UCs=",
-      "WebAuth.Client.dll": "sha256-q2rIVDPKjURHDw+AyFyK3BJJTQIr1y4V11pqJDBzTLc="
+      "WebAuth.Api.Contracts.dll": "sha256-IPqwhneR7PGR7hT8GyOBi3WLQp6F6v8KbVcQSy3KZqc=",
+      "WebAuth.Client.dll": "sha256-TtjQWFuYL5kbrEdYRQvRSeaMdG6\/oJkVgsfEwMYIP20="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "WebAuth.Api.Contracts.pdb": "sha256-CgKHAZqbeHtbXTTyr93a6O4bCZhnjos\/LSdaaA3pwfE=",
-      "WebAuth.Client.pdb": "sha256-0dB6kZteRzBbinMn1Ldx3c5MFFafjiW4rOFsBMm6Bgc="
+      "WebAuth.Api.Contracts.pdb": "sha256-Tq\/bhuK9SdVSHuxKwSzLN8ZoKowOXm85tBzqB3165G4=",
+      "WebAuth.Client.pdb": "sha256-vSib9zTLTjobDOPw5c9fr42lvSSah4Gs1TI+\/U1JzqE="
     },
     "runtime": {
       "dotnet.7.0.2.m0lj0pyy15.js": "sha256-4mh03qTse0uNR+dQ6ydExm4jJXph0RE8zGNCtF0jiNA=",

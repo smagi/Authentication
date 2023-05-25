@@ -1,5 +1,7 @@
 namespace WebAuth.Client.Services;
 
-public class IDateTimeService
+public interface IDateTimeService
 {
+    DateTime GetDateTimeNow();
+    DateTime GetDateTimeNowUTC();
 }

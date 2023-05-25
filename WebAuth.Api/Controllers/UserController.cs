@@ -72,7 +72,7 @@ namespace WebAuth.Api.Controllers
                 return Ok(new UserLoginResultDto
                 {
                     Succeeded = true,
-                    Token = new TokenDto
+                    Token = new UserTokenDto
                     {
                         Token = new JwtSecurityTokenHandler().WriteToken(token),
                         Expiration = token.ValidTo

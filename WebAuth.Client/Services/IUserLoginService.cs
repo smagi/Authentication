@@ -1,8 +1,9 @@
-using WebAuth.Client.Models;
+using WebAuth.Client.Models.Login;
 
 namespace WebAuth.Client.Services;
 
 public interface ILoginService
 {
-    Task<LoginResult> Login(Login login);
+    Task<UserLoginResult> Login(UserLogin login);
+    Task Logout();
 }
