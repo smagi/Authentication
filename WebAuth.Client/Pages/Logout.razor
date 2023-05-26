@@ -1,7 +1,7 @@
 @page "/logout"
-@using WebAuth.Client.Clients
+@using WebAuth.Client.Services
 
-@inject AuthenticationHttpClient Http
+@inject ILoginService LoginService
 @inject NavigationManager NavigationManager
 
 <text>Logging out...</text>
@@ -9,7 +9,7 @@
 @code{
         protected override async Task OnInitializedAsync()
         {
-            await Http.LogoutUser();
+            await LoginService.Logout();
             NavigationManager.NavigateTo("login");
         }
 }

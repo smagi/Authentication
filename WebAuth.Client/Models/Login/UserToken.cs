@@ -1,8 +1,7 @@
-namespace WebAuth.Api.Contracts.Dtos.Login
+namespace WebAuth.Client.Models.Login;
+
+public class UserToken
 {
-    public class UserTokenDto
-    { 
         public string? Token { get; init; }
         public DateTime Expiration { get; init; }
-    }
 }

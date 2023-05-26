@@ -1,89 +1,39 @@
-
-
 using System.Net.Http.Json;
-using System.Text.Json;
 using WebAuth.Api.Contracts.Dtos.Login;
 using WebAuth.Api.Contracts.Dtos.Register;
-using WebAuth.Client.Components;
-using WebAuth.Client.Services;
+using WebAuth.Client.Extensions;
+using WebAuth.Client.Models;
+using WebAuth.Client.Models.Login;
+using WebAuth.Client.Models.Register;
 
 namespace WebAuth.Client.Clients;
-
-public class AuthenticationHttpClient
+public class AuthenticationHttpClient: IAuthenticationHttpClient
 {
-    private readonly ILogger<AuthenticationHttpClient> _logger;
     private readonly HttpClient _httpClient;
-    private readonly ITokenService _tokenService;
-    private readonly CustomAuthenticationStateProvider _customAuthenticationStateProvider;
-
-    public AuthenticationHttpClient(
-        ILogger<AuthenticationHttpClient> logger, 
-        HttpClient httpClient, 
-        ITokenService tokenService,
-        CustomAuthenticationStateProvider customAuthenticationStateProvider )
+    public AuthenticationHttpClient(HttpClient httpClient)
     {
-        _logger = logger;
         _httpClient = httpClient;
-        _tokenService = tokenService;
-        _customAuthenticationStateProvider = customAuthenticationStateProvider;
+    }
+    public async Task<UserRegisterResult> RegisterUser(UserRegister userRegister)
+    {
+        var userRegisterDto = userRegister.MapToDto();
+
+        var response = await _httpClient.PostAsJsonAsync("user/register", userRegisterDto);
+        var resultDto = await response.Content.ReadFromJsonAsync<UserRegisterResultDto>();
+
+        var result = resultDto!.MapToModel();
+        return result!;
     }
 
-    public async Task<UserRegisterResultDto> RegisterUser(UserRegisterDto userRegisterDto)
+    public async Task<UserLoginResult> LoginUser(UserLogin userLogin)
     {
-        try
-        {
-            var response = await _httpClient.PostAsJsonAsync("user/register", userRegisterDto);
-            var result = await response.Content.ReadFromJsonAsync<UserRegisterResultDto>();
+        var userLoginDto = userLogin.MapToDto();
 
-            return result!;
+        var response = await _httpClient.PostAsJsonAsync<UserLoginDto>("User/login", userLoginDto);
+        var resultDto = await response.Content.ReadFromJsonAsync<UserLoginResultDto>();
 
-        }
-        catch (Exception exception)
-        {
-            _logger.LogError(exception.Message);
-
-            return new UserRegisterResultDto
-            {
-                Succeesed = false,
-                Errors = new List<string>()
-                { 
-                    "Registration error"
-                }
-            };
-        }
-    }
-
-    public async Task<UserLoginResultDto?> LoginUser(UserLoginDto userLoginDto)
-    {
-        try
-        {
-            var response = await _httpClient.PostAsJsonAsync<UserLoginDto>("User/login", userLoginDto);
-
-            var result = await response.Content.ReadFromJsonAsync<UserLoginResultDto>();
-            
-            await _tokenService.SetToken(result?.Token!);
-
-            _customAuthenticationStateProvider.StateChanged();
-
-            return result;
-        }
-        catch (Exception exception)
-        {
-            _logger.LogError(exception.Message);
-
-            return new UserLoginResultDto
-            {
-                Succeeded = false,
-                Message = "Login error"
-            };
-        }
-    }
-    public async Task LogoutUser()
-    {
-        await _tokenService.RemoveToken();
-        
-        _customAuthenticationStateProvider.StateChanged();
-        
+        var result = resultDto!.MapToModel();
+        return result!;
     }
 }
 

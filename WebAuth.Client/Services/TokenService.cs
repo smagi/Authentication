@@ -1,5 +1,5 @@
 using Blazored.LocalStorage;
-using WebAuth.Api.Contracts.Dtos.Login;
+using WebAuth.Client.Models.Login;
 
 namespace WebAuth.Client.Services;
 
@@ -11,19 +11,16 @@ public class TokenService : ITokenService
     {
         _localStorageService = localStorageService;
     }
-
-    public async Task<TokenDto> GetToken()
+    public async Task<UserToken> GetToken()
     {
-        return await _localStorageService.GetItemAsync<TokenDto>(Key);
+        return await _localStorageService.GetItemAsync<UserToken>(Key);
     }
-
     public async Task RemoveToken()
     {
         await _localStorageService.RemoveItemAsync(Key);
     }
-
-    public async Task SetToken(TokenDto tokenDto)
+    public async Task SetToken(UserToken token)
     {   
-        await _localStorageService.SetItemAsync(Key, tokenDto);
+        await _localStorageService.SetItemAsync(Key, token);
     }
 }

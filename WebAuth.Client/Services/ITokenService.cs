@@ -1,10 +1,10 @@
-using WebAuth.Api.Contracts.Dtos.Login;
+using WebAuth.Client.Models.Login;
 
 namespace WebAuth.Client.Services;
 
 public interface ITokenService
 {
-    Task<TokenDto> GetToken();
+    Task<UserToken> GetToken();
     Task RemoveToken();
-    Task SetToken(TokenDto tokenDto);
+    Task SetToken(UserToken tokenDto);
 }
