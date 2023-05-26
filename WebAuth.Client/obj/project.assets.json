@@ -470,6 +470,12 @@
           }
         }
       },
+      "Microsoft.NET.ILLink.Tasks/7.0.100-1.23062.2": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
       "System.IO.Pipelines/7.0.0": {
         "type": "package",
         "compile": {
@@ -1005,6 +1011,12 @@
           "lib/net7.0/Microsoft.JSInterop.WebAssembly.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/7.0.100-1.23062.2": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
       "System.IO.Pipelines/7.0.0": {
@@ -1842,6 +1854,38 @@
         "microsoft.jsinterop.webassembly.nuspec"
       ]
     },
+    "Microsoft.NET.ILLink.Tasks/7.0.100-1.23062.2": {
+      "sha512": "k8rosw61UMYCtkhrxHmkJM6c4zFQopwpOncxyLGH0HTDPNCg88Vt3sHUu+RPYBSz6Oj3OlkwgXDO6uCcgU0B7A==",
+      "type": "package",
+      "path": "microsoft.net.illink.tasks/7.0.100-1.23062.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "Sdk/Sdk.props",
+        "build/6.0_suppressions.xml",
+        "build/Microsoft.NET.ILLink.Tasks.props",
+        "build/Microsoft.NET.ILLink.targets",
+        "microsoft.net.illink.tasks.7.0.100-1.23062.2.nupkg.sha512",
+        "microsoft.net.illink.tasks.nuspec",
+        "tools/net472/ILLink.Tasks.dll",
+        "tools/net472/Mono.Cecil.dll",
+        "tools/net472/System.Buffers.dll",
+        "tools/net472/System.Collections.Immutable.dll",
+        "tools/net472/System.Memory.dll",
+        "tools/net472/System.Numerics.Vectors.dll",
+        "tools/net472/System.Reflection.Metadata.dll",
+        "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/net7.0/ILLink.Tasks.deps.json",
+        "tools/net7.0/ILLink.Tasks.dll",
+        "tools/net7.0/Mono.Cecil.Pdb.dll",
+        "tools/net7.0/Mono.Cecil.dll",
+        "tools/net7.0/illink.deps.json",
+        "tools/net7.0/illink.dll",
+        "tools/net7.0/illink.runtimeconfig.json"
+      ]
+    },
     "System.IO.Pipelines/7.0.0": {
       "sha512": "jRn6JYnNPW6xgQazROBLSfpdoczRw694vO5kKvMcNnpXuolEixUyw6IBuBs2Y2mlSX/LdLvyyWmfXhaI3ND1Yg==",
       "type": "package",
@@ -1985,48 +2029,48 @@
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.2",
       "Microsoft.Extensions.Http >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
+      "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23062.2",
       "WebAuth.Api.Contracts >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\MSmagi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\WebAuth\\WebAuth.Client\\WebAuth.Client.csproj",
+      "projectUniqueName": "C:\\Users\\MSmagi\\source\\repos\\smagi\\Authentication\\WebAuth.Client\\WebAuth.Client.csproj",
       "projectName": "WebAuth.Client",
-      "projectPath": "C:\\Users\\User\\Desktop\\WebAuth\\WebAuth.Client\\WebAuth.Client.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\WebAuth\\WebAuth.Client\\obj\\",
+      "projectPath": "C:\\Users\\MSmagi\\source\\repos\\smagi\\Authentication\\WebAuth.Client\\WebAuth.Client.csproj",
+      "packagesPath": "C:\\Users\\MSmagi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MSmagi\\source\\repos\\smagi\\Authentication\\WebAuth.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MSmagi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Users\\MSmagi\\Desktop\\Microservices\\Play.Catalog\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\WebAuth\\WebAuth.Api.Contracts\\WebAuth.Api.Contracts.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\WebAuth\\WebAuth.Api.Contracts\\WebAuth.Api.Contracts.csproj"
+            "C:\\Users\\MSmagi\\source\\repos\\smagi\\Authentication\\WebAuth.Api.Contracts\\WebAuth.Api.Contracts.csproj": {
+              "projectPath": "C:\\Users\\MSmagi\\source\\repos\\smagi\\Authentication\\WebAuth.Api.Contracts\\WebAuth.Api.Contracts.csproj"
             }
           }
         }
@@ -2065,6 +2109,12 @@
           "Microsoft.Extensions.Logging": {
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "Microsoft.NET.ILLink.Tasks": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[7.0.100-1.23062.2, )",
+            "autoReferenced": true
           }
         },
         "imports": [
@@ -2080,7 +2130,15 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.2, 7.0.2]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.2, 7.0.2]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
             "version": "[7.0.2, 7.0.2]"
           }
         ],
@@ -2089,7 +2147,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.3.23178.7\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
