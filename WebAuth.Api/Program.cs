@@ -42,6 +42,8 @@ public class Programm
                 .GetSection(nameof(JwtTokenSettings))
                 .Get<JwtTokenSettings>() ?? throw new ArgumentNullException(nameof(JwtTokenSettings));
 
+            byte[] jwtSecretsBytes = jwtTokenSettings.GetSecretBytes();
+
             options.SaveToken = true;
             options.RequireHttpsMetadata = true;
             options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
@@ -52,7 +54,7 @@ public class Programm
                 ValidateLifetime = true,
                 ValidIssuer = jwtTokenSettings.ValidIssuer,
                 ValidAudience = jwtTokenSettings.ValidAudience,
-                IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(jwtTokenSettings.Secret!)),
+                IssuerSigningKey = new SymmetricSecurityKey(jwtSecretsBytes),
                 ClockSkew = TimeSpan.Zero
             };
         });
