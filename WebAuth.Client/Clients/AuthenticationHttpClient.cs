@@ -18,7 +18,7 @@ public class AuthenticationHttpClient: IAuthenticationHttpClient
     {
         var userRegisterDto = userRegister.MapToDto();
 
-        var response = await _httpClient.PostAsJsonAsync("user/register", userRegisterDto);
+        var response = await _httpClient.PostAsJsonAsync("User/register", userRegisterDto);
         var resultDto = await response.Content.ReadFromJsonAsync<UserRegisterResultDto>();
 
         var result = resultDto!.MapToModel();

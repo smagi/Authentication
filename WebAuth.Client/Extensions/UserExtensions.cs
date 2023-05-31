@@ -19,7 +19,7 @@ public static class UserExtensions
     {
         return new UserToken
         { 
-            Expiration = userTokenDto.Expiration,
+            Expiration = userTokenDto.Expiration!.Value,
             Token = userTokenDto.Token
         };
     }
@@ -49,10 +49,15 @@ public static class UserExtensions
     }
     public static UserLoginResult MapToModel(this UserLoginResultDto userLoginResultDto)
     {
+        var tokenDto = userLoginResultDto.Token;
+
+        var token = tokenDto is null ? null : tokenDto.MapToModel();
+
         return new UserLoginResult
         { 
             Message = userLoginResultDto.Message,
-            Succeeded = userLoginResultDto.Succeeded
+            Succeeded = userLoginResultDto.Succeeded,
+            Token = token
         };
     }
     public static UserRegisterDto MapToDto(this UserRegister userLogin)

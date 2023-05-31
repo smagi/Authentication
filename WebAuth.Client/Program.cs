@@ -12,9 +12,6 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-builder.Services.AddScoped<ITokenService, TokenService>();
-builder.Services.AddScoped<AuthenticationHttpClient>();
-
 builder.AddAuthenticationHttpClient();
 
 builder.Services.AddAuthorizationCore();
@@ -23,6 +20,14 @@ builder.Services.AddBlazoredLocalStorage();
 
 builder.Services.AddScoped<CustomAuthenticationStateProvider>();
 builder.Services.AddScoped<AuthenticationStateProvider>(provider => provider.GetRequiredService<CustomAuthenticationStateProvider>());
+
+builder.Services.AddScoped<IDateTimeService, DateTimeService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<ITokenValidationService, TokenValidatorServcie>();
+builder.Services.AddScoped<IUserLoginService, UserLoginService>();
+builder.Services.AddScoped<IUserRegistrationService, UserRegistrationService>();
+
+builder.Services.AddScoped<TokenValidator>();
 
 //builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 

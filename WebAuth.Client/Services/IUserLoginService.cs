@@ -2,7 +2,7 @@ using WebAuth.Client.Models.Login;
 
 namespace WebAuth.Client.Services;
 
-public interface ILoginService
+public interface IUserLoginService
 {
     Task<UserLoginResult> Login(UserLogin login);
     Task Logout();

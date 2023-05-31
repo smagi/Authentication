@@ -42,6 +42,8 @@ public class Programm
                 .GetSection(nameof(JwtTokenSettings))
                 .Get<JwtTokenSettings>() ?? throw new ArgumentNullException(nameof(JwtTokenSettings));
 
+            //builder.Services.Configure<JwtTokenSettings>(builder.Configuration.GetSection("JwtTokenSettings"));
+
             byte[] jwtSecretsBytes = jwtTokenSettings.GetSecretBytes();
 
             options.SaveToken = true;
@@ -61,6 +63,8 @@ public class Programm
 
         builder.Services.AddTransient<IClaimsService, ClaimsService>();
         builder.Services.AddTransient<IJwtTokenService, JwtTokenService>();
+
+        builder.Services.Configure<JwtTokenSettings>(builder.Configuration.GetSection(nameof(JwtTokenSettings)));
 
         var app = builder.Build();
 

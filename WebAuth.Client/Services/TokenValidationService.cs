@@ -1,11 +1,10 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using FluentValidation;
 using WebAuth.Client.Models.Login;
 
 namespace WebAuth.Client.Services;
 
-public class TokenValidatorServcie
+public class TokenValidatorServcie: ITokenValidationService
 {
     private const string AuthenticationType = "jwt";
     private readonly TokenValidator _userTokenValidator;
@@ -15,11 +14,11 @@ public class TokenValidatorServcie
     }
     public ClaimsIdentity Validate(UserToken userToken)
     {
-        var result = _userTokenValidator.Validate(userToken);
+            var result = _userTokenValidator.Validate(userToken);
 
-        ClaimsIdentity identity = result.IsValid ? GetClaimsIdentity(userToken) : new ClaimsIdentity();
+            ClaimsIdentity identity = result.IsValid ? GetClaimsIdentity(userToken) : new ClaimsIdentity();
 
-        return identity;
+            return identity;
     }
     private static ClaimsIdentity GetClaimsIdentity(UserToken token)
     {
