@@ -77,10 +77,13 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+<<<<<<< HEAD
+=======
       "Id": "C:\\Users\\MSmagi\\source\\repos\\smagi\\Authentication\\WebAuth.Client\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
+>>>>>>> ff21f08daef0acbbffa27fc102d5a2e1bd9090d1
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebAuth.Client.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

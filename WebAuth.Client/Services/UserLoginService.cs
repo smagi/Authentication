@@ -5,13 +5,13 @@ using WebAuth.Client.Models.Login;
 
 namespace WebAuth.Client.Services;
 
-public class LoginService : ILoginService
+public class UserLoginService : IUserLoginService
 {
     private readonly ILogger<AuthenticationHttpClient> _logger;
     private readonly ITokenService _tokenService;
     private readonly CustomAuthenticationStateProvider _customAuthenticationStateProvider;
     private readonly AuthenticationHttpClient _authenticationHttpClient;
-    public LoginService(
+    public UserLoginService(
         ILogger<AuthenticationHttpClient> logger, 
         ITokenService tokenService, 
         CustomAuthenticationStateProvider customAuthenticationStateProvider, 

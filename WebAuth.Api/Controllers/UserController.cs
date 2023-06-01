@@ -1,4 +1,5 @@
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using WebAuth.Api.Contracts.Dtos.Login;
@@ -26,6 +27,7 @@ namespace WebAuth.Api.Controllers
 
         [HttpPost]
         [Route("register")]
+        [AllowAnonymous]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
         public async Task<IActionResult> Register(UserRegisterDto userRegisterDto)
@@ -49,15 +51,23 @@ namespace WebAuth.Api.Controllers
                     Errors = result.Errors.Select(res => res.Description)
                 });
             }
+            await SeedRoles();
 
-            //await SeedRoles();
-
-            result = await _userManagaer.AddToRoleAsync(newUser, UserRoles.User);
+            result = await _userManagaer.AddToRoleAsync(newUser, ApplicationUserRoles.User);
 
             return CreatedAtAction(nameof(Register), new UserRegisterResultDto { Succeesed = true });
+
+            async Task SeedRoles()
+            { 
+                    if(!await _roleMAnager.RoleExistsAsync(ApplicationUserRoles.User))
+                        await _roleMAnager.CreateAsync(new ApplicationRole(ApplicationUserRoles.User));
+                    if(!await _roleMAnager.RoleExistsAsync(ApplicationUserRoles.Admin))
+                        await _roleMAnager.CreateAsync(new ApplicationRole(ApplicationUserRoles.Admin));
+            }
         }
         [HttpPost]
         [Route("login")]
+        [AllowAnonymous]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<IActionResult> Login([FromBody] UserLoginDto userLoginDto)

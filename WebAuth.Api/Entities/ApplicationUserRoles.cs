@@ -1,6 +1,6 @@
 namespace WebAuth.Api.Entities
 {
-    public class UserRoles
+    public class ApplicationUserRoles
     {
         public const string User = "User";
         public const string Admin = "Admin";

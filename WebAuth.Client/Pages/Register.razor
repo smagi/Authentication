@@ -3,50 +3,56 @@
 @using WebAuth.Client.Components
 @using WebAuth.Client.Models.Register
 
-@inject UserRegistrationService UserRegistrationService
+@inject IUserRegistrationService UserRegistrationService
 
 <PageTitle>Register</PageTitle>
 
-<h1>Register</h1>
-
-@if(_succeeded)
-{
-    <p>Registration successful!<a href="login">Click here to login</a></p>
-}
-else
-{
-    <EditForm Model="@_userRegister" OnValidSubmit="@HandleValidSubmit">
-        <CustomValidation @ref="_customValidation" />
-        <DataAnnotationsValidator/>
-        <ValidationSummary/>
-
-        <div class="mb-3">
-            <InputText class="form-control" id="Email" @bindValue="_userRegister.Email" aria-placeholder="Email"/>
-        </div>
-        <div class="mb-3">
-            <InputText class="form-control" id="Password" @bindValue="_userRegister.Password" aria-placeholder="Password"/>
-        </div>
-        <div class="mb-3">
-            <InputText class="form-control" id="ConfirmPassword" @bindValue="_userRegister.ConfirmPassword" aria-placeholder="Confirm password"/>
-        </div>
-
-        @if(!_registering)
+<div class="card text-center">
+    <div class="card-body">
+        <h5 class="card-title">Register</h5>
+        @if(_succeeded)
         {
-            <button class="btn btn-primary" type="submit">Submit</button>
+            <p>Registration successful! <a href="login">Click here to login</a></p>
         }
         else
         {
-            <p>
-                Registering...
-            </p>
-        }
+            <EditForm Model="@_userRegister" OnValidSubmit="@HandleValidSubmit">
 
-    </EditForm>
-}
+                <CustomValidation @ref="_customValidation" />
+                <DataAnnotationsValidator/>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <InputText class="form-control" id="Email" @bind-Value="_userRegister.Email" placeholder="Email"/>
+                        <ValidationMessage For="@(() => _userRegister.Email)" />
+                    </div>
+                    <div class="form-group">
+                        <InputText class="form-control" id="Password" @bind-Value="_userRegister.Password" placeholder="Password" 
+                        type="password"/>
+                        <ValidationMessage For="@(() => _userRegister.Password)" />
+                    </div>
+                    <div class="form-group">
+                        <InputText class="form-control" id="ConfirmPassword" @bind-Value="_userRegister.ConfirmPassword" placeholder="Confirm Password" type="password"/>
+                        <ValidationMessage For="@(() => _userRegister.ConfirmPassword)" />
+                    </div>
+
+                    <button disabled="@_registering" class="btn btn-primary">
+                        @if (@_registering) 
+                        {
+                            <span class="spinner-border spinner-border-sm mr-1"></span>
+                        }
+                        Register
+                    </button>
+                    <NavLink href="/login" class="btn btn-link">Cancel</NavLink>
+            </EditForm>
+        }
+    </div>
+</div>
+
+
 
 @code {
-    private UserRegister _userRegister= new();
-    private CustomValidation? _customValidation;
+    public UserRegister _userRegister= new();
+    public CustomValidation? _customValidation;
     private bool _registering;
     private bool _succeeded; 
 
