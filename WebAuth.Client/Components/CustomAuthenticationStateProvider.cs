@@ -7,11 +7,11 @@ namespace WebAuth.Client.Components;
 public class CustomAuthenticationStateProvider : AuthenticationStateProvider
 {
     private readonly ITokenService _tokenService;
-    private readonly TokenValidatorServcie _tokenValidatorServcie;
-    public CustomAuthenticationStateProvider(ITokenService tokenService, TokenValidatorServcie tokenValidatorServcie)
+    private readonly TokenValidatorService _tokenValidatorService;
+    public CustomAuthenticationStateProvider(ITokenService tokenService, TokenValidatorService tokenValidatorServcie)
     {
         _tokenService = tokenService;
-        _tokenValidatorServcie = tokenValidatorServcie;
+        _tokenValidatorService = tokenValidatorServcie;
     }
     public void StateChanged()
     {
@@ -21,9 +21,8 @@ public class CustomAuthenticationStateProvider : AuthenticationStateProvider
     {
         var token = await _tokenService.GetToken();
 
-        ClaimsIdentity identity = _tokenValidatorServcie.Validate(token);
+        ClaimsIdentity identity = _tokenValidatorService.Validate(token);
 
         return new AuthenticationState(new ClaimsPrincipal(identity));
     }
-   
 }

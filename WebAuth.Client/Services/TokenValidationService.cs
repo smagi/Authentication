@@ -5,11 +5,11 @@ using WebAuth.Client.Models.Login;
 
 namespace WebAuth.Client.Services;
 
-public class TokenValidatorServcie
+public class TokenValidatorService
 {
     private const string AuthenticationType = "jwt";
     private readonly TokenValidator _userTokenValidator;
-    public TokenValidatorServcie(TokenValidator userTokenValidator)
+    public TokenValidatorService(TokenValidator userTokenValidator)
     {
         _userTokenValidator = userTokenValidator;
     }

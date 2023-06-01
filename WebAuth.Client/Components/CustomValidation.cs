@@ -8,7 +8,6 @@ namespace WebAuth.Client.Components
         private ValidationMessageStore? _validationMessageStore;
         [CascadingParameter]
         private EditContext? CurrentEditContext { get; set; }
-
         protected override void OnInitialized()
         {
             if (CurrentEditContext is null)

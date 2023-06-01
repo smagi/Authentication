@@ -54,12 +54,5 @@
     "C:\\Users\\MSmagi\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.2\\microsoft.netcore.app.ref.7.0.2.nupkg.sha512",
     "C:\\Users\\MSmagi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.2\\microsoft.aspnetcore.app.ref.7.0.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\MSmagi\\source\\repos\\smagi\\Authentication\\WebAuth.Client\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
