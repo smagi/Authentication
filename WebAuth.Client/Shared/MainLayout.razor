@@ -1,4 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Components.Authorization
+@using WebAuth.Client.Components;
 
 @inherits LayoutComponentBase
 
@@ -19,8 +20,8 @@
                 </NotAuthorized>
             </AuthorizeView>
         </div>
-
         <article class="content px-4">
+            <Alert />
             @Body
         </article>
     </main>

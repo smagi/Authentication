@@ -18,16 +18,15 @@ builder.Services.AddAuthorizationCore();
 
 builder.Services.AddBlazoredLocalStorage();
 
-builder.Services.AddScoped<CustomAuthenticationStateProvider>();
-builder.Services.AddScoped<AuthenticationStateProvider>(provider => provider.GetRequiredService<CustomAuthenticationStateProvider>());
-
-builder.Services.AddScoped<IDateTimeService, DateTimeService>();
-builder.Services.AddScoped<ITokenService, TokenService>();
-builder.Services.AddScoped<ITokenValidationService, TokenValidatorServcie>();
-builder.Services.AddScoped<IUserLoginService, UserLoginService>();
-builder.Services.AddScoped<IUserRegistrationService, UserRegistrationService>();
-
-builder.Services.AddScoped<TokenValidator>();
+builder.Services.AddScoped<CustomAuthenticationStateProvider>()
+    .AddScoped<AuthenticationStateProvider>(provider => provider.GetRequiredService<CustomAuthenticationStateProvider>())
+    .AddScoped<IDateTimeService, DateTimeService>()
+    .AddScoped<ITokenService, TokenService>()
+    .AddScoped<ITokenValidationService, TokenValidatorServcie>()
+    .AddScoped<IUserLoginService, UserLoginService>()
+    .AddScoped<IUserRegistrationService, UserRegistrationService>()
+    .AddScoped<IMessageAlertService, MessageAlertService>()
+    .AddScoped<TokenValidator>();
 
 //builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
