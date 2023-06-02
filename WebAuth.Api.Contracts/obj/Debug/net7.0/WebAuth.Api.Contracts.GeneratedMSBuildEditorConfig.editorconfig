@@ -8,4 +8,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebAuth.Api.Contracts
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\User\Desktop\WebAuth\WebAuth.Api.Contracts\
+=======
+build_property.ProjectDir = C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Api.Contracts\
+>>>>>>> 16b67b46b00f438ea072aaabc7ae06c031c9f16b

@@ -849,7 +849,34 @@ C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\obj\Debug\net7.
 C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\obj\Debug\net7.0\refint\WebAuth.Client.dll
 C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\obj\Debug\net7.0\WebAuth.Client.pdb
 C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\obj\Debug\net7.0\ref\WebAuth.Client.dll
+<<<<<<< HEAD
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\FluentValidation.dll
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.IdentityModel.Logging.dll
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.IdentityModel.Tokens.dll
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.IdentityModel.Logging.dll.gz
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.IdentityModel.Abstractions.dll.gz
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.IdentityModel.JsonWebTokens.dll.gz
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\System.IdentityModel.Tokens.Jwt.dll.gz
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\FluentValidation.dll.gz
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.IdentityModel.Tokens.dll.gz
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\obj\Debug\net7.0\build-gz\wedtdDa3.gz
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\obj\Debug\net7.0\build-gz\DXx3Qy0t.gz
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\obj\Debug\net7.0\build-gz\gvLSRkBJ.gz
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\obj\Debug\net7.0\build-gz\0Z3XzO3A.gz
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\obj\Debug\net7.0\build-gz\yrsanGyY.gz
+C:\Users\MSmagi\source\repos\smagi\Authentication\WebAuth.Client\obj\Debug\net7.0\build-gz\hTtozIxx.gz
+=======
 >>>>>>> ff21f08daef0acbbffa27fc102d5a2e1bd9090d1
+<<<<<<< HEAD
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\blazor.boot.json
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\blazor.webassembly.js
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.LocalStorage.dll
@@ -1723,3 +1750,6 @@ C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\WebAuth.Client.dll
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\refint\WebAuth.Client.dll
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\WebAuth.Client.pdb
 C:\Users\User\Desktop\WebAuth\WebAuth.Client\obj\Debug\net7.0\ref\WebAuth.Client.dll
+=======
+>>>>>>> 8c75642756cb4ac03af800dd7b977c7984804aa5
+>>>>>>> 16b67b46b00f438ea072aaabc7ae06c031c9f16b

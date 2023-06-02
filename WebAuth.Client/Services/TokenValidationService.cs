@@ -4,11 +4,15 @@ using WebAuth.Client.Models.Login;
 
 namespace WebAuth.Client.Services;
 
+<<<<<<< HEAD
+public class TokenValidatorService
+=======
 public class TokenValidatorServcie: ITokenValidationService
+>>>>>>> 8c75642756cb4ac03af800dd7b977c7984804aa5
 {
     private const string AuthenticationType = "jwt";
     private readonly TokenValidator _userTokenValidator;
-    public TokenValidatorServcie(TokenValidator userTokenValidator)
+    public TokenValidatorService(TokenValidator userTokenValidator)
     {
         _userTokenValidator = userTokenValidator;
     }
